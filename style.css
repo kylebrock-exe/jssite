@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, purple, orchid);
+    z-index: -2;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid purple;
+}
+
+#logo{
+    grid-column: 2/3;
+    height: 60%;
+    width: 60%;
+}
+
+.hamburger{
+    justify-self: end;
+}
+
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainArticle{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 6px solid orchid;
+    border-radius: 25px;
+}
+
+.slider img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.mainArticle::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+
+.mainArticle h1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 3em;
+    color: white;
+    z-index: 3;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.mainArticle p{
+    display: inline;
+    position: relative;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: fantasy;
+    font-size: 1.5em;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+span {
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+}
+
+.player{
+   position: relative;
+   overflow: hidden;
+   display: block;
+   padding-top: 56.25%;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.player iframe{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 45%;
+    height: 45%;
+    border: 10000px red;
+}

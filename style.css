@@ -119,6 +119,21 @@ section{
     text-shadow: 0 0 25px black;
 }
 
+.mainArticle li{
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.5em;
+    font-family: fantasy;
+    font-size: 1.5em;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0 0 25px black;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
 .player{
    position: relative;
    overflow: hidden;
@@ -178,13 +193,6 @@ section{
     border: solid 3px darkgray;
 }
 
-
-#count{
-	font-family: fantasy;
-	color: orchid;
-	z-index: 100;
-    font-size: 100px;
-}
 
 .carousel{
 	position: relative;
@@ -248,5 +256,25 @@ section{
     left: 0;
     width: 50%;
     height: 50%;
+    box-shadow: 10px 25px 25px black;
+}
+
+.row_left{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.row_right{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.about_pic{ 
+    display: block;
+    width: auto;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 10px 25px 25px black;
 }

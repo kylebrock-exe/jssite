@@ -14,18 +14,22 @@
 
 <body>
   <div class="container">
-  <header>
-    <nav class="navBar">   
-      <img src=".\Img\PONC.png" id="logo">
-      <img class="hamburger" src=".\Img\MenuLogo.png" alt="hamburger">
-        <ul>
-          <li><a href="main.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="letsplay.html">LET'S PLAYS</a></li>
-          <li><a href="https://www.twitch.tv/kyleapparently/videos" target="_blank">LIVE STREAMS</a></li>
-        </ul>
-    </nav>
-  </header>
+
+    <header>
+      <div class="head-content">
+        <nav class="navBar">   
+          <img src=".\Img\PONC.png" id="logo">
+          <img class="hamburger" src=".\Img\MenuLogo.png" alt="hamburger">
+            <ul>
+              <li class="nav_item"><a href="main.html">HOME</a></li>
+              <li class="nav_item"><a href="about.html">ABOUT</a></li>
+              <li class="nav_item"><a href="letsplay.html">LET'S PLAYS</a></li>
+              <li class="nav_item"><a href="videos.html">VIDEOS</a></li>
+              <li class="nav_item"><a href="https://www.twitch.tv/kyleapparently/videos" target="_blank">STREAMS</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
 
 
   <section class="page-content">
@@ -42,28 +46,20 @@
           <li class="carousel_slide current_slide">
             <div class="mainArticle">
                 <h1 id="headline">OGRE BATTLE 64</h1>
-                <div class="player">         
-                    <div id="ytplayer"></div>
-                      <script async>
-                        var tag = document.createElement('script');
-                        tag.src = "https://www.youtube.com/player_api";
-                        var firstScriptTag = document.getElementsByTagName('script')[0];
-                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                      
-                        var player;
-                        function onYouTubePlayerAPIReady() {
-                          player = new YT.Player('ytplayer', {
-                            height: '360',
-                            width: '640',
-                            videoId: 'hSB40vNU9pQ'})};   
-                      </script>                          
-            </div>
+                <div class="player">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/hSB40vNU9pQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>     
           </li>
 
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">FINAL FANTASY X</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/nZ9KE4kVgoQ" 
                         title="YouTube video player" 
@@ -77,7 +73,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">MAJORA'S MASK RANDOMIZED</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/-b87ISqAV44" 
                         title="YouTube video player" 
@@ -91,7 +87,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">MERRY GEAR SOLID 2</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/fEe5l2Bqej4" 
                         title="YouTube video player" 
@@ -105,7 +101,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">DOKI DOKI LITERATURE CLUB</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/Z_tY5kX47Tw" 
                         title="YouTube video player" 
@@ -120,7 +116,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">SILENT HILL 2</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/UcrsZuTFTJk" 
                         title="YouTube video player" 
@@ -134,7 +130,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">SONIC ADVENTURE</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/yoOz_wcG4Cw" 
                         title="YouTube video player" 
@@ -148,7 +144,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">MYSTICAL NINJA 64</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/w_oVJj55yIg" 
                         title="YouTube video player" 
@@ -162,7 +158,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">LOZ: THE MISSING LINK</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/E_IyyH7hY_Q" 
                         title="YouTube video player" 
@@ -176,7 +172,7 @@
           <li class="carousel_slide">
             <div class="mainArticle">
                 <h1 id="headline">FINAL FANTASY III</h1>
-                    <div class="player ytplayer">
+                    <div class="player">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/9YOJrwVFMN0" 
                         title="YouTube video player" 
@@ -204,12 +200,14 @@
 
  
 
+ <div class="footer-content">
   <div class="social">
     <p class="social_icon"><a href="https://www.youtube.com/channel/UCZuWNUfPkYY9vcH3r4oFhXA?view_as=subscriber" target="_blank"><img src="img/youtube.png" width="225" alt="" class="thumbnail" /></a></p>
     <p class="social_icon"><a href="https://www.facebook.com/kyleapparently/?modal=admin_todo_tour" target="_blank"><img src="img/fb.png" width="225" alt="" class="thumbnail"/></a></p>
     <p class="social_icon"><a href="https://twitter.com/kylembrock2" target="_blank"><img src="img/twitter.png" width="225" alt="" class="thumbnail"/></a></p>
     <p class="social_icon"><a href="https://www.instagram.com/kyleapparently/" target="_blank"><img src="img/insta.png" width="840" alt="" class="thumbnail"/></a></p>
   </div>
+</div>
 
 
   </div>
@@ -231,7 +229,6 @@
     <script src="subcount.js"></script>
 
     <script src="carousel.js"></script>
-
 
 </body>
 </html>

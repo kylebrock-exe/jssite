@@ -14,45 +14,58 @@
 
 <body>
   <div class="container">
+
   <header>
-    <nav class="navBar">   
-      <img src=".\Img\PONC.png" id="logo">
-      <img class="hamburger" src=".\Img\MenuLogo.png" alt="hamburger">
-        <ul>
-          <li><a href="main.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="letsplay.html">LET'S PLAYS</a></li>
-          <li><a href="https://www.twitch.tv/kyleapparently/videos" target="_blank">LIVE STREAMS</a></li>
-        </ul>
-    </nav>
+    <div class="head-content">
+      <nav class="navBar">   
+        <img src=".\Img\PONC.png" id="logo">
+        <img class="hamburger" src=".\Img\MenuLogo.png" alt="hamburger">
+          <ul>
+            <li class="nav_item"><a href="main.html">HOME</a></li>
+            <li class="nav_item"><a href="about.html">ABOUT</a></li>
+            <li class="nav_item"><a href="letsplay.html">LET'S PLAYS</a></li>
+            <li class="nav_item"><a href="videos.html">VIDEOS</a></li>
+            <li class="nav_item"><a href="https://www.twitch.tv/kyleapparently/videos" target="_blank">STREAMS</a></li>
+          </ul>
+      </nav>
+    </div>
   </header>
 
 
   <section class="page-content">
     <div class="carousel">
       <div class="carousel_track-container">
-      <button class="carousel_button carousel_button-left">
-        <img src="\Img\LeftArrow.png">
-      </button>
+        
+        <button class="carousel_button carousel_button-left">
+          <img src="\Img\LeftArrow.png">
+        </button>
+
         <ul class="carousel_track">
 
           <li class="carousel_slide current_slide">
             <div class="mainArticle">      
-      
               <div>
+
                 <h1 id="headline">Salutations Nerds!</h1>
+
                   <h2 id="text">Welcome to the domain of YouTube's 31,654th most popular JRPG/SRPG/ROM Hacking channel, Kyle Apparently!
                     For the unindoctrinated here's a short preview of all the content you can expect from me!
                   </h2>
-                    <div class="player ytplayer">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/qFreqxzdzws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    
+                  <div class="player">
+                      <iframe width="560" height="315" 
+                      src="https://www.youtube.com/embed/qFreqxzdzws" 
+                      title="YouTube video player" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen></iframe>
+                  </div>
+
               </div>
             </div> 
           </li>
 
           <li class="carousel_slide">
-            
             <div class="mainArticle">      
               <div>
                 <h1 id="headline">Check Out My Latest Series!</h1>
@@ -60,7 +73,7 @@
                   Join me as I work through every chapter and scene of this cult classic and show you some tips and tricks along the way!</h2>
               </div>
         
-              <div class="player">         
+              <div class="player ytplayer">         
                 <div id="ytplayer"></div>
                   <script async>
                     var tag = document.createElement('script');
@@ -76,28 +89,38 @@
                         videoId: 'hSB40vNU9pQ'})};   
                   </script>
               </div>
+
             </div> 
           </li>
 
           <li class="carousel_slide">
-            <div class="mainArticle">      
-      
+            <div class="mainArticle">            
               <div>
                 <h1 id="headline">Follow Me On Twitter!</h1>
                   <h2 id="text">Check me out on Twitter where you can get such insighful gaming hot takes as...</h2>
               </div>
+
               <div class="twitter">
-              <a class="twitter-timeline" data-width="640" data-height="360" data-theme="dark" href="https://twitter.com/KyleMBrock2?ref_src=twsrc%5Etfw">Tweets by KyleMBrock2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <a href="https://twitter.com/KyleMBrock2?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @KyleMBrock2</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+                <a class="twitter-timeline" 
+                data-height="320" 
+                data-theme="dark"
+                href="https://twitter.com/KyleMBrock2?ref_src=twsrc%5Etfw">Tweets by KyleMBrock2</a> 
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a href="https://twitter.com/KyleMBrock2?ref_src=twsrc%5Etfw" 
+                class="twitter-follow-button" data-size="large" 
+                data-show-count="false">Follow @KyleMBrock2</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
             </div> 
           </li>
         </ul>
+
       <button class="carousel_button carousel_button-right">
         <img src="\Img\RightArrow.png">
       </button>
-    </div>
-  </div>
+      
+     </div>
+   </div>
   </section>
   
 
@@ -107,13 +130,14 @@
   </div>
 
  
-
+<div class="footer-content">
   <div class="social">
     <p class="social_icon"><a href="https://www.youtube.com/channel/UCZuWNUfPkYY9vcH3r4oFhXA?view_as=subscriber" target="_blank"><img src="img/youtube.png" width="225" alt="" class="thumbnail" /></a></p>
     <p class="social_icon"><a href="https://www.facebook.com/kyleapparently/?modal=admin_todo_tour" target="_blank"><img src="img/fb.png" width="225" alt="" class="thumbnail"/></a></p>
     <p class="social_icon"><a href="https://twitter.com/kylembrock2" target="_blank"><img src="img/twitter.png" width="225" alt="" class="thumbnail"/></a></p>
     <p class="social_icon"><a href="https://www.instagram.com/kyleapparently/" target="_blank"><img src="img/insta.png" width="840" alt="" class="thumbnail"/></a></p>
   </div>
+</div>
 
 
   </div>
@@ -132,8 +156,6 @@
     crossorigin="anonymous"></script>
 
     <script src="startup.js"></script>
-
-    <script src="subcount.js"></script>
 
     <script src="carousel.js"></script>
 

@@ -1,10 +1,13 @@
-//Get Subs
+//Get Sub/Vid/View Count
+
+//Vars
 const youTubeKey= "AIzaSyDfbHgZRJWm2NBFMDWUKkSWMyskWxoYu_g";
 const youTubeUser = "UCZuWNUfPkYY9vcH3r4oFhXA";
 const subCount = document.getElementById('subCount');
 const videoCount = document.getElementById('videoCount');
 const viewCount = document.getElementById('viewCount');
 
+//Get Subscriber Count
 let getSubscribers = () => {
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeUser}&key=${youTubeKey}`)
     .then(response => {
@@ -18,6 +21,8 @@ let getSubscribers = () => {
 
 getSubscribers();
 
+
+//Get Video Count
 let getVideo = () => {
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeUser}&key=${youTubeKey}`)
     .then(response => {
@@ -31,6 +36,7 @@ let getVideo = () => {
 
 getVideo();
 
+//Get Total Views
 let getView = () => {
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeUser}&key=${youTubeKey}`)
     .then(response => {

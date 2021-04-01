@@ -1,3 +1,6 @@
+//Start Up Animation
+
+//Vars
 const mainArticle = document.querySelector('.mainArticle');
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');

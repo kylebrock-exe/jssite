@@ -1,4 +1,5 @@
 /*******************Random Video Button***********************/
+/***********FIRST JAVA I EVER WROTE, OH THE NOSTALGIA*********/
 
 var randomLinkButton = document.getElementById("random");
 
@@ -21,7 +22,6 @@ randomLinkButton.addEventListener("click", function(){
 		if (random === i) {
 			window.location = links[i];
 		}
-
 	}
 });
 

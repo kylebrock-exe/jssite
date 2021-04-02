@@ -290,38 +290,11 @@ section{
     box-shadow: 10px 25px 25px black;
 }
 
-.videoButton {
-	box-shadow: 0px 0px 12px 0px #010500;
-	background:linear-gradient(to bottom, #ff0000 5%, #000000 100%);
-	background-color:#ff0000;
-	border-radius:28px;
-	border:1px solid #000000;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 40%;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Impact;
-	text-align: center;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #010500;
+.countdown{
+    width: 100%;
+    height: 20%;
+    padding-top: 1em;
 }
-
-.videoButton:hover {
-	background:linear-gradient(to bottom, #000000 5%, #ff0000 100%);
-	background-color:#25003d;
-}
-
-.videoButton:active {
-	position:inherit;
-	top:1px;
-}    
-
 
 #clockdiv{
 	font-family: sans-serif;
@@ -347,10 +320,24 @@ section{
 	display: inline-block;
 }
 
+.clock-text{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 3em;
+    color: white;
+    z-index: 3;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0 0 25px black;
+    padding-right: 1em;
+}
+
 .smalltext{
 	padding-top: 5px;
 	font-size: 1em;
     font-family: fantasy;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 /********** Media Query 321px ***********/
